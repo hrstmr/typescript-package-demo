@@ -1,8 +1,11 @@
 {
-  "name": "typescript-package-demo",
-  "license": "MIT",
-  "devDependencies": {
-    "tsup": "^6.6.3",
-    "typescript": "^4.9.5"
-  }
+    "name": "typescript-package-demo",
+    "license": "MIT",
+    "scripts": {
+        "build": "tsup src/index.ts --format cjs,esm --dts"
+    },
+    "devDependencies": {
+        "tsup": "^6.6.3",
+        "typescript": "^4.9.5"
+    }
 }
